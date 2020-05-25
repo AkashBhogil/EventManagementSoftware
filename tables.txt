@@ -1,0 +1,10 @@
+create table customer_details(mobile numeric(10) primary key,name varchar2(50),email varchar2(50),address varchar2(300),how varchar2(100));
+
+
+create table req(event_id integer,package varchar2(200),quantity integer,price numeric(10))
+
+create table event(event_id INTEGER primary key AUTOINCREMENT,mobile numeric(10),date varchar2(50),time varchar2(50),event_venue varchar2(300),venue varchar2(200),status varchar2(10))
+
+
+
+create table payment(event_id int primary key,total_payment numeric(10),paid_payment numeric(10),payment_method varchar2(10));
